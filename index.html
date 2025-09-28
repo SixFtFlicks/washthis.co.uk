@@ -151,16 +151,19 @@ header::after {
         }
         
         .btn {
-            display: inline-flex;
-            align-items: center;
-            padding: 15px 30px;
-            border-radius: 12px;
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 16px;
-            transition: transform 0.2s, box-shadow 0.2s;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-        }
+    display: inline-flex;
+    align-items: center;
+    padding: 15px 30px;
+    border-radius: 16px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    border: 3px solid transparent;
+    backdrop-filter: blur(10px);
+    position: relative;
+    overflow: hidden;
+}
         
         .btn:hover {
             transform: translateY(-2px);
@@ -168,14 +171,38 @@ header::after {
         }
         
         .btn-ios {
-            background: linear-gradient(135deg, #007AFF, #0056CC);
-            color: white;
-        }
-        
-        .btn-android {
-            background: linear-gradient(135deg, #34C759, #28A745);
-            color: white;
-        }
+    background: rgba(227, 242, 253, 0.9);
+    color: #0277BD;
+    border: 3px solid #29B6F6;
+    font-weight: 700;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 15px rgba(41, 182, 246, 0.3);
+}
+
+.btn-ios:hover {
+    background: rgba(227, 242, 253, 1.0);
+    color: #01579B;
+    border-color: #0277BD;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(41, 182, 246, 0.4);
+}
+
+.btn-android {
+    background: rgba(227, 242, 253, 0.9);
+    color: #0277BD;
+    border: 3px solid #29B6F6;
+    font-weight: 700;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 15px rgba(41, 182, 246, 0.3);
+}
+
+.btn-android:hover {
+    background: rgba(227, 242, 253, 1.0);
+    color: #01579B;
+    border-color: #0277BD;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(41, 182, 246, 0.4);
+}
         
         .features {
             display: grid;
